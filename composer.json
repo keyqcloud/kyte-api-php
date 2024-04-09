@@ -1,0 +1,28 @@
+{
+    "name": "keyqcloud/kyte-api-php",
+    "description": "SDK for communicating with a Kyte API endpoint.",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "aws/aws-sdk-php": "^3.101"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "authors": [
+        {
+            "name": "Kenneth Hough",
+            "email": "kenneth@keyqcloud.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":
+            {
+                "Kyte\\": "src/"
+            },
+            "files": ["src/functions.php"]
+    }
+}
